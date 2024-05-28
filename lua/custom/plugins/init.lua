@@ -36,7 +36,7 @@ return {
     end,
   },
   {
-    'ahmedkhalf/project.nvim',
+    'sydnash/project.nvim',
     config = function()
       require('project_nvim').setup {
         sync_root_with_cwd = true,
