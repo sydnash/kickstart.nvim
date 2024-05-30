@@ -15,5 +15,6 @@ if has_nvim_tree then
     require('nvim-tree.api').tree.toggle { focus = false, find_file = true }
   end
 
-  vim.api.nvim_create_autocmd({ 'VimEnter' }, { callback = open_nvim_tree })
+  vim.keymap.set('n', '<leader>tt', ':NvimTreeToggle<CR>', { desc = '[T]oggle [N]vim-tree' })
+  -- vim.api.nvim_create_autocmd({ 'VimEnter' }, { callback = open_nvim_tree })
 end
