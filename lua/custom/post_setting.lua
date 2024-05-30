@@ -18,3 +18,9 @@ if has_nvim_tree then
   vim.keymap.set('n', '<leader>tt', ':NvimTreeToggle<CR>', { desc = '[T]oggle [N]vim-tree' })
   -- vim.api.nvim_create_autocmd({ 'VimEnter' }, { callback = open_nvim_tree })
 end
+
+-- 全局设置 Tab 宽度为 4，并展开为空格
+vim.o.shiftwidth = 4 -- 缩进使用 4 个空格
+vim.o.tabstop = 4 -- Tab 键宽度为 4
+vim.o.softtabstop = 4 -- 按 Tab 键时插入 4 个空格
+vim.o.expandtab = true -- 将 Tab 转换为空格
